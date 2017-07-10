@@ -60,6 +60,10 @@ class BlogsController < ApplicationController
       format.json { head :no_content }
     end
   end
+  
+  def toggle_status
+    redirect_to blogs_url
+  end
 
   private
     # Use callbacks to share common setup or constraints between actions.
