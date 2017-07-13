@@ -1,5 +1,5 @@
 class RenamePercentUntilizedColumn < ActiveRecord::Migration[5.0]
   def change
-    rename_column :skills, :percent_unitlized, :percent_utitlized
+    rename_column :skills, :percent_unitlized, :percent_utilized
   end
 end

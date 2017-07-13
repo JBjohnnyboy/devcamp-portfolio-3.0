@@ -66,7 +66,6 @@ class BlogsController < ApplicationController
       @blog.published!
     elsif @blog.published?
       @blog.draft!
-      byebug
     end
     
     redirect_to blogs_url, notice: 'Post status has been blessed'

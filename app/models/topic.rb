@@ -1,9 +1,5 @@
 class Topic < ApplicationRecord
-  enum status: { draft: 0, published: 1}
-  extend FriendlyId
-  friendly_id :title, use: :slugged
+  validates_presence_of :title
   
-  validates_presence_of :title, :body
-  
-  has many :blogs
+  has_many :blogs
 end
