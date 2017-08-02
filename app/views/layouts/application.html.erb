@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%=  @page_title %></title>
+    <title><%= @page_title %></title>
     <%= csrf_meta_tags %>
-    
     <meta name="keywords" content="<%= @seo_keybords %>" />
 
     <%= stylesheet_link_tag "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" %>
@@ -15,12 +14,12 @@
   <body>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
-   
     <%= render 'shared/nav', location: 'top'  %>
    
     <hr> 
-   
     <%= yield %>
+    
+    <p><%= copyright_generator %></p>
     
     <%=  source_helper("application") %>
   </body>

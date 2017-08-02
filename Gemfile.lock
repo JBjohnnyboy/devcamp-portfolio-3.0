@@ -1,4 +1,10 @@
 GIT
+  remote: https://github.com/JBjohnnyboy/BoundingCalibration_view_tool
+  revision: a186c3608ca1bac71473bc6bc35e8e7176998b4f
+  specs:
+    BoundingCalibration_view_tool (0.1.0)
+
+GIT
   remote: https://github.com/twbs/bootstrap-rubygem
   revision: bd3d58a56c46d1f87785298706b136b73c192b8b
   specs:
@@ -181,6 +187,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  BoundingCalibration_view_tool!
   bootstrap!
   byebug
   coffee-rails (~> 4.2)

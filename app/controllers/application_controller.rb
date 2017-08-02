@@ -20,6 +20,17 @@ class ApplicationController < ActionController::Base
     @page_title = 'AppName | My Portfolio Website'
   end
   
-
-
 end
+
+module BoundingCalibrationViewTool
+  class Renderer
+    def self.copyright name, msg
+      "&copy; #{Time.now.year} | <b>#{name}<b> #{msg}".html_safe
+    end
+  end
+end
+  
+
+  
+
+

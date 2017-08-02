@@ -16,4 +16,7 @@ module ApplicationHelper
     end
   end
   
+  def copyright_generator
+    BoundingCalibrationViewTool::Renderer.copyright 'John Lloyd Reed', 'All rights reserved'
+  end
 end

@@ -54,3 +54,4 @@ gem 'friendly_id', '~> 5.2', '>= 5.2.1'
 gem 'devise', '~> 4.3'
 
 gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
+gem 'BoundingCalibration_view_tool', git: 'https://github.com/JBjohnnyboy/BoundingCalibration_view_tool'
