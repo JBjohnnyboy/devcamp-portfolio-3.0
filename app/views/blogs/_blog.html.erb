@@ -5,6 +5,6 @@
     <p><%= blog.status %></p>
     <p><%= link_to blog.status, toggle_status_blog_path(blog) %></p>
     <p><%= link_to 'Show', blog %></p>
-    <p><%= link_to 'Edit', edit_blog_path(blog) %></p>
-    <p><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    <p><%= link_to 'Edit', edit_blog_path(blog) if logged_in? (:site_admin) %></p>
+    <p><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } if logged_in?(:site_admin) %></p>
   </div>
