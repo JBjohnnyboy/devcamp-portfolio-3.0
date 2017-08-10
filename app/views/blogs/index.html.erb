@@ -1,12 +1,10 @@
-<p id="notice"><%= notice %></p>
 
-<h1>Blogs</h1>
-<% cache do %>
-  <div>
-   <%= render partial: @blogs, spacer_template: 'blog_ruler' %>
+  <div class='col-sm-7 blog-main'>
+   
+   <%= paginate @blogs %>
+   <%= render @blogs %>
+   
+   <%= paginate @blogs %>
   </div>
-<% end %>
 
-<br>
 
-<%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
